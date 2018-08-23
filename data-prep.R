@@ -139,8 +139,9 @@ internal_search_test <- internal_search_test %>%
 test_combined <- right_join(internal_search_test, test, by = "ssessionid")
 
 # clean data and distribution of search
-test_combined$search_internal <- ifelse(is.na(test_combined$search_internal) == T, "no search", 
-                                        test_combined$search_internal)
+test_combined$search_internal <- ifelse(is.na(test_combined$search_internal) == T, "no search",
+  test_combined$search_internal
+)
 table(test_combined$search_internal)
 test_combined$search_internal <- as.factor(test_combined$search_internal)
 
@@ -149,6 +150,6 @@ testset <- right_join(test_time_of_day, test_combined, by = "ssessionid")
 testset$time_of_day <- as.factor(testset$time_of_day)
 testset$search_internal <- as.factor(testset$search_internal)
 
-# check data structure and save it 
+# check data structure and save it
 str(testset)
 # saveRDS(testset, file = "data/testset.rds")
