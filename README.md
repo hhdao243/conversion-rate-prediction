@@ -12,7 +12,7 @@ To compare the performance of Google paid campaign and Google organic search on 
 To identify the most important variables contributing to session conversion
 To provide the actionable insights and recommendations from our analysis
 
-III. My approach
+## III. My approach
 Below is my approach to build a machine learning model. It is easy to follow and a good start for new-commers in big data area.
 1. EDA
 - Create visualization of conversion rate by entry points, key word search, actions.
@@ -32,7 +32,7 @@ nn's performance by adding interactions. Then if logistic's performance is still
 - Metrics: AUC, gain chart and confusion matrix
 6. Interpretation and application
 
-IV. Key takeaways
+##IV. Key takeaways
 - Yes, real data is messy and EDA would save your life. Never skip this step!
 - Watch out reverse casuality problem in your model.
 - Neural network easily overfits therefore you should carefully check overfitting and choose smaller note if it overfits 
