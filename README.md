@@ -1,5 +1,7 @@
 # conversion-rate-prediction
 
+Due to NDA, I cannot show data and results of this project. However, I would like to share my approach and key takeaways when building my very first ML models from real data.
+
 ## I. Data:
 - Given data is more than 1M interactions (eg.clicks, opened pages and searched keywords)  of customers to a website within a session
 - The data is a nested table
